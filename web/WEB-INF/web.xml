@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>srvLogin</servlet-name>
+        <servlet-class>Controlador.srvLogin</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>srvListaPuestoParaRegistroPersonal</servlet-name>
+        <servlet-class>Controlador.srvListaPuestoParaRegistroPersonal</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>srvRegistrarPersonal</servlet-name>
+        <servlet-class>Controlador.srvRegistrarPersonal</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>srvLogin</servlet-name>
+        <url-pattern>/srvLogin</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>srvListaPuestoParaRegistroPersonal</servlet-name>
+        <url-pattern>/srvListaPuestoParaRegistroPersonal</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>srvRegistrarPersonal</servlet-name>
+        <url-pattern>/srvRegistrarPersonal</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            300
+        </session-timeout>
+    </session-config>
+    <welcome-file-list>
+        <welcome-file>login.jsp</welcome-file>
+    </welcome-file-list>
+</web-app>
